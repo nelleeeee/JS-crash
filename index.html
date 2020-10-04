@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Javascript on steroid</title>
+</head>
+
+<body>
+
+    <!-- 1 -->
+    <div class="container-1">
+        <h2>Chellenge 1. Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+
+    </div>
+
+    <!-- 2 -->
+    <div class="container-2">
+        <h2>Challenge 2: Cat generater</h2>
+        <button class="btn btn-success" id="cat-gen-btn" onclick="generateCat()">Generate</button>
+        <div class="flex-box-container-2" id="flex-cat-gen"></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="container-3">
+        <h2>Challenge 3: Rock Siccors Paper</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" height=150 width=150 onclick="rpsGame(this)"
+                src="https://images-na.ssl-images-amazon.com/images/I/91r3gPrA50L._AC_SL1500_.jpg" alt="">
+            <img id="scissors" height=150 width=150 onclick="rpsGame(this)"
+                src="https://images-na.ssl-images-amazon.com/images/I/61r3ZRQQIsL._AC_SL1500_.jpg" alt="">
+            <img id="paper" height=150 width=150 onclick="rpsGame(this)"
+                src="https://previews.123rf.com/images/scis65/scis651306/scis65130600090/20357057-piece-of-paper-with-empty-space.jpg"
+                alt="">
+        </div>
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>
